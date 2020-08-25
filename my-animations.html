@@ -1,0 +1,102 @@
+<button class="button-one">Hello</button>
+<button class="button-two">Hello</button>
+<button class="button-three">Hello</button>
+
+<div class="hamburger-one">
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+
+
+
+<style>
+body > * {
+  margin: 3em;
+}
+
+.button-one {
+  padding: 1em;
+  border: 1px solid #018FBE;
+  border-radius: 0.5em;
+  font-size: 1em;
+  color: white;
+  background-color: #018FBE;
+  transition: 200ms;
+}
+
+.button-one:hover {
+  background-color: white;
+  color: #018FBE;
+}
+
+.button-two {
+  padding: 1em;
+  background-color: white;
+  color: #018FBE;
+  border: none;
+  transition: 200ms;
+}
+
+.button-two:hover {
+  letter-spacing: 0.2em;
+  border-top: 0.3em solid #018FBE;
+  border-bottom: 0.3em solid #018FBE;
+}
+
+.button-three {
+  padding: 1em;
+  border: 1px solid #018FBE;
+  border-radius: 0.5em;
+  font-size: 1em;
+  background-color: white;
+  color: #018FBE;
+  transition: 200ms;
+}
+
+.button-three:hover {
+  color: white;
+  background-color: #018FBE;
+}
+
+.hamburger-one {
+    border: solid 1px black;
+    width: 100px;
+    height: 100px;
+    transition: 200ms;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: 200ms;
+}
+
+.hamburger-one:hover {
+  background-color: black;
+}
+
+.hamburger-one:hover > div {
+  background-color: white;
+}
+
+
+.hamburger-one:hover > div:nth-child(1) {
+  transform: translate(0em, 1.71em) rotate(45deg);
+}
+
+.hamburger-one:hover > div:nth-child(2) {
+  width: 0px;
+  transform: rotate(180deg);
+}
+
+.hamburger-one:hover > div:nth-child(3) {
+  transform: translate(0em, -1.71em) rotate(-45deg);
+}
+
+.hamburger-one > div {
+  width: 70px;
+  height: 10px;
+  background-color: black;
+  transition: 200ms;
+}
+</style>
